@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vitest/globals", "vitest/importMeta"],
+    "baseUrl": ".",
+    "rootDir": "."
+  },
+  "include": ["src/**/*", "tests/**/*", "solutions/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+

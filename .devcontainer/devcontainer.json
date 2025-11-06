@@ -1,0 +1,24 @@
+{
+  "name": "Reselect TDD Workshop",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "containerEnv": {
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vitest.explorer",
+        "ms-vscode.vscode-typescript-next"
+      ],
+      "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "vitest.enable": true
+      }
+    }
+  },
+  "postCreateCommand": "sudo corepack enable && yarn install",
+  "remoteUser": "node"
+}
